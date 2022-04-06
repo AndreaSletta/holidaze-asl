@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accommodations",
+  "info": {
+    "name": "accommodations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Hotels",
+        "Apartments",
+        "Cabins",
+        "Hostels",
+        "Guest_houses",
+        "BnBs"
+      ],
+      "required": false,
+      "default": "Hotels"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string"
+    },
+    "facilities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "facilities.facilities"
+    },
+    "address": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}
