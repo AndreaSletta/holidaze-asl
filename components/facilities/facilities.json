@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_facilities_facilities",
+  "info": {
+    "name": "facilities",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "Parking_available": {
+      "type": "boolean"
+    },
+    "Pet_friendly": {
+      "type": "boolean"
+    },
+    "Breakfast_included": {
+      "type": "boolean"
+    },
+    "Internett": {
+      "type": "boolean"
+    },
+    "Resturant": {
+      "type": "boolean"
+    },
+    "Pool": {
+      "type": "boolean"
+    },
+    "Gym": {
+      "type": "boolean"
+    }
+  }
+}
